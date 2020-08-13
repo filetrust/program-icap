@@ -13,6 +13,10 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/mvp-icap-cloud](https://github.com/filetrust/mvp-icap-cloud) This provides the Orchestrator that co-ordinates the processing of content received by the ICAP Server.
 
+[filetrust/rebuild-k8s-filetypedetection](https://github.com/filetrust/rebuild-k8s-filetypedetection) This provides the source code for the File Type Detection API used during ICAP processing.
+
+[filetrust/rebuild-k8s](https://github.com/filetrust/rebuild-k8s) This provides the deployment scripts for the ICAP services being deployed to a Kubernetes Cluster.
+
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
 The model's diagram is [here](https://app.lucidchart.com/invitations/accept/43e0cb76-052f-486c-8bfd-166f4ad4ea4f)
