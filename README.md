@@ -20,6 +20,8 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/rebuild-k8s](https://github.com/filetrust/rebuild-k8s) This provides the deployment scripts for the ICAP services being deployed to a Kubernetes Cluster.
 
+[filetrust/icap-argo](https://github.com/filetrust/icap-argo) This provides the Orchestration that co-ordinates the processing of content received by the ICAP on a Kubernetes environment.
+
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
 The model's diagram is [here](https://app.lucidchart.com/invitations/accept/43e0cb76-052f-486c-8bfd-166f4ad4ea4f)
