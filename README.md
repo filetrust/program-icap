@@ -22,6 +22,8 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/icap-argo](https://github.com/filetrust/icap-argo) This provides the Orchestration that co-ordinates the processing of content received by the ICAP on a Kubernetes environment.
 
+[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store.
+
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
 The model's diagram is [here](https://app.lucidchart.com/invitations/accept/43e0cb76-052f-486c-8bfd-166f4ad4ea4f)
