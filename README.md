@@ -22,6 +22,8 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/icap-argo](https://github.com/filetrust/icap-argo) This provides the Orchestration that co-ordinates the processing of content received by the ICAP on a Kubernetes environment.
 
+[filetrust/icap-management-ui](https://github.com/filetrust/icap-management-ui) This provides the service for a management UI used to configure the Adaptation policy and display metrics from the ICAP service, as well as a log/history of transactions. 
+
 [filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store.
 
 ## Threat Model
