@@ -22,7 +22,7 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/icap-argo](https://github.com/filetrust/icap-argo) This provides the Orchestration that co-ordinates the processing of content received by the ICAP on a Kubernetes environment.
 
-[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store.
+[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)
 
 [filetrust/transaction-event-api-static-data](https://github.com/filetrust/transaction-event-api-static-data) This is a tool that populates static data for the transaction-event-api
 
