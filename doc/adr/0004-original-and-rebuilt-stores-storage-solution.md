@@ -38,6 +38,10 @@ Content is encrypted at rest.
 Access limited to key receipient only.
 CPU overhead for the encryption and decryption of what could potentially be large files, benchmarking of crypto libraries would be required.
 
+### Preferred Option
+The preferred option for the solution is *Option 4*.
+Option 1 will be used for the initial internal milestone. Option 4 will be implemented for the delivered product.
+
 ## Consequences
 
 Storing the content in a Persistent Volume would keep the data local to where it is being used.
