@@ -19,7 +19,7 @@ Storing the data within a Persistant Volume makes it available to all pods withi
 
 ## Decision
 
-### Option 1: Stored in open file
+### Option 1: Stored in open files stored on Persistent Volumes
 Simple to implement. No additional processing overhead encrypt\decrypt cycles). Content at risk of compromise in the event of targetted malware.
 
 ### Option 2: Use MinIO Security Token Service (STS) 
@@ -30,11 +30,13 @@ Provides secure access through time-limited keys.
 ### Option 3: Use BLOB Storage with Shared Access Signature Strings
 Requires the use of additional Platform Service.
 Requires the transfer of the content from local file in ICAP Server to cloud storage.
+An alternative solution would need to be found for on-premise deployment.
 
-### Option 4: Pass Public Key to Consumer Component
+### Option 4: Asymmetric encryption of files stored on Persistent Volumes
 This would enable local storage of the content.
 Content is encrypted at rest.
 Access limited to key receipient only.
+CPU overhead for the encryption and decryption of what could potentially be large files, benchmarking of crypto libraries would be required.
 
 ## Consequences
 
