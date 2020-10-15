@@ -24,7 +24,9 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/icap-management-ui](https://github.com/filetrust/icap-management-ui) This provides the service for a management UI used to configure the Adaptation policy and display metrics from the ICAP service, as well as a log/history of transactions. 
 
-[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store.
+[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)
+
+[filetrust/transaction-event-api-static-data](https://github.com/filetrust/transaction-event-api-static-data) This is a tool that populates static data for the transaction-event-api
 
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
