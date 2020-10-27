@@ -32,6 +32,10 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/policy-management-api](https://github.com/filetrust/policy-management-api) This is the API that handles operations on the Adaption Policy.
 
+[filetrust/pod-janitor](https://github.com/filetrust/pod-janitor) This is a maintenance pod responsible for identifying and disposing of completed request processing pods.
+
+[filetrust/icap-infrastructure](https://github.com/filetrust/icap-infrastructure) A central repository for all helm charts of application and 3rd party services.
+
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
 The model's diagram is [here](https://app.lucidchart.com/invitations/accept/43e0cb76-052f-486c-8bfd-166f4ad4ea4f)
