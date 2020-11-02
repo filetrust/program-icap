@@ -20,11 +20,15 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/rebuild-k8s](https://github.com/filetrust/rebuild-k8s) This provides the deployment scripts for the ICAP services being deployed to a Kubernetes Cluster.
 
+[filetrust/event-submission-service](https://github.com/filetrust/event-submission-service) This facilitates the upload of transaction event and analysis report to the Azure File Share.
+
 [filetrust/icap-adaptation-service](https://github.com/filetrust/icap-adaptation-service) This provides the Orchestration that co-ordinates the processing of content received by the ICAP on a Kubernetes environment.
 
 [filetrust/icap-management-ui](https://github.com/filetrust/icap-management-ui) This provides the service for a management UI used to configure the Adaptation policy and display metrics from the ICAP service, as well as a log/history of transactions. 
 
 [filetrust/icap-request-processing](https://github.com/filetrust/icap-request-processing) This provides the rebuild functionality for the ICAP offering.
+
+[filetrust/pod-janitor](https://github.com/filetrust/pod-janitor) This provides cleaning of Failed & Succeeded pods in the cluster.
 
 [filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)
 
