@@ -38,6 +38,8 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/policy-update-service](https://github.com/filetrust/policy-update-service) This handles the update to the Adaptation Policy Configmap.
 
+[filetrust/archive-adaptation-service](https://github.com/filetrust/archive-adaptation-service) This provides the orchestration that co-ordinates the processing of archive files.
+
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
 The model's diagram is [here](https://app.lucidchart.com/invitations/accept/43e0cb76-052f-486c-8bfd-166f4ad4ea4f)
