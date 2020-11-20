@@ -44,7 +44,7 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/archive-processing](https://github.com/filetrust/archive-processing) This process facilitates the unpacking, sending off adaptation requests and repacking of archive files.
 
-[filetrust/reference-ncfs-service](https://github.com/filetrust/reference-ncfs-service) This process is a reference for the Non-Compliant file service. It decides the action to take when a file is considered non-compliant.
+[filetrust/reference-ncfs](https://github.com/filetrust/reference-ncfs) This process is a reference for the Non-Compliant file service. It decides the action to take when a file is considered non-compliant.
 
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
