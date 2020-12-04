@@ -30,7 +30,13 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/pod-janitor](https://github.com/filetrust/pod-janitor) This provides cleaning of Failed & Succeeded pods in the cluster.
 
-[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)
+<s>[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)</s>
+
+replaced with:
+
+[filetrust/transaction-query-service](https://github.com/filetrust/transaction-query-service) This is an API that lives on each of the adaptation clusters to serve transactional data.
+
+[filetrust/transaction-query-aggregator](https://github.com/filetrust/transaction-query-aggregator) This is an API that lives on the administration cluster to aggregate and serve transactional data from each of the 'transaction-query-service' endpoints.
 
 [filetrust/transaction-event-api-static-data](https://github.com/filetrust/transaction-event-api-static-data) This is a tool that populates static data for the transaction-event-api
 
