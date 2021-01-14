@@ -14,6 +14,8 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/mvp-icap-service](https://github.com/filetrust/mvp-icap-service) This provides the ICAP Server and Glasswall ICAP Resource. These components are responsible for providing the ICAP interface and submitting the content received in ICAP Requests for processing through the Glasswall products.
 
+[filetrust/icap-service-metrics-exporter](https://github.com/filetrust/icap-service-metrics-exporter) Sidecar for the mvp-icap-service. Calls the 'info' service of C-ICAP, converts statistics into Prometheus metrics and creates '/metrics' port for Prometheus to scrape from.
+
 [filetrust/mvp-icap-cloud](https://github.com/filetrust/mvp-icap-cloud) This provides the Orchestrator that co-ordinates the processing of content received by the ICAP Server.
 
 [filetrust/rebuild-k8s-filetypedetection](https://github.com/filetrust/rebuild-k8s-filetypedetection) This provides the source code for the File Type Detection API used during ICAP processing.
