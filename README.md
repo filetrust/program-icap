@@ -14,11 +14,15 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/mvp-icap-service](https://github.com/filetrust/mvp-icap-service) This provides the ICAP Server and Glasswall ICAP Resource. These components are responsible for providing the ICAP interface and submitting the content received in ICAP Requests for processing through the Glasswall products.
 
+[filetrust/icap-service-metrics-exporter](https://github.com/filetrust/icap-service-metrics-exporter) Sidecar for the mvp-icap-service. Calls the 'info' service of C-ICAP, converts statistics into Prometheus metrics and creates '/metrics' port for Prometheus to scrape from.
+
 [filetrust/mvp-icap-cloud](https://github.com/filetrust/mvp-icap-cloud) This provides the Orchestrator that co-ordinates the processing of content received by the ICAP Server.
 
 [filetrust/rebuild-k8s-filetypedetection](https://github.com/filetrust/rebuild-k8s-filetypedetection) This provides the source code for the File Type Detection API used during ICAP processing.
 
 [filetrust/rebuild-k8s](https://github.com/filetrust/rebuild-k8s) This provides the deployment scripts for the ICAP services being deployed to a Kubernetes Cluster.
+
+[filetrust/event-submission-service](https://github.com/filetrust/event-submission-service) This facilitates the upload of transaction event and analysis report to the Azure File Share.
 
 [filetrust/icap-adaptation-service](https://github.com/filetrust/icap-adaptation-service) This provides the Orchestration that co-ordinates the processing of content received by the ICAP on a Kubernetes environment.
 
@@ -26,7 +30,15 @@ The cloud deployment is implemented through the integration of the services prov
 
 [filetrust/icap-request-processing](https://github.com/filetrust/icap-request-processing) This provides the rebuild functionality for the ICAP offering.
 
-[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)
+[filetrust/pod-janitor](https://github.com/filetrust/pod-janitor) This provides cleaning of Failed & Succeeded pods in the cluster.
+
+<s>[filetrust/transaction-event-api](https://github.com/filetrust/transaction-event-api) This is the API that handles transaction searches on the event store. The swagger deployment can be found [here](https://filetrust.github.io/transaction-event-api/#/)</s>
+
+replaced with:
+
+[filetrust/transaction-query-service](https://github.com/filetrust/transaction-query-service) This is an API that lives on each of the adaptation clusters to serve transactional data.
+
+[filetrust/transaction-query-aggregator](https://github.com/filetrust/transaction-query-aggregator) This is an API that lives on the administration cluster to aggregate and serve transactional data from each of the 'transaction-query-service' endpoints.
 
 [filetrust/transaction-event-api-static-data](https://github.com/filetrust/transaction-event-api-static-data) This is a tool that populates static data for the transaction-event-api
 
@@ -35,6 +47,17 @@ The cloud deployment is implemented through the integration of the services prov
 [filetrust/pod-janitor](https://github.com/filetrust/pod-janitor) This is a maintenance pod responsible for identifying and disposing of completed request processing pods.
 
 [filetrust/icap-infrastructure](https://github.com/filetrust/icap-infrastructure) A central repository for all helm charts of application and 3rd party services.
+
+[filetrust/policy-update-service](https://github.com/filetrust/policy-update-service) This handles the update to the Adaptation Policy Configmap.
+
+[filetrust/ncfs-policy-update-service](https://github.com/filetrust/ncfs-policy-update-service) This handles the update to the NCFS Policy Configmap.
+
+[filetrust/archive-adaptation-service](https://github.com/filetrust/archive-adaptation-service) This provides the orchestration that co-ordinates the processing of archive files.
+
+[filetrust/archive-processing](https://github.com/filetrust/archive-processing) This process facilitates the unpacking, sending off adaptation requests and repacking of archive files.
+
+[filetrust/reference-ncfs](https://github.com/filetrust/reference-ncfs) This process is a reference for the Non-Compliant file service. It decides the action to take when a file is considered non-compliant.
+
 
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
