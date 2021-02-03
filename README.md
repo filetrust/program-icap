@@ -44,6 +44,10 @@ replaced with:
 
 [filetrust/policy-management-api](https://github.com/filetrust/policy-management-api) This is the API that handles operations on the Adaption Policy.
 
+[filetrust/pod-janitor](https://github.com/filetrust/pod-janitor) This is a maintenance pod responsible for identifying and disposing of completed request processing pods.
+
+[filetrust/icap-infrastructure](https://github.com/filetrust/icap-infrastructure) A central repository for all helm charts of application and 3rd party services.
+
 [filetrust/policy-update-service](https://github.com/filetrust/policy-update-service) This handles the update to the Adaptation Policy Configmap.
 
 [filetrust/ncfs-policy-update-service](https://github.com/filetrust/ncfs-policy-update-service) This handles the update to the NCFS Policy Configmap.
@@ -53,6 +57,7 @@ replaced with:
 [filetrust/archive-processing](https://github.com/filetrust/archive-processing) This process facilitates the unpacking, sending off adaptation requests and repacking of archive files.
 
 [filetrust/reference-ncfs](https://github.com/filetrust/reference-ncfs) This process is a reference for the Non-Compliant file service. It decides the action to take when a file is considered non-compliant.
+
 
 ## Threat Model
 The program's Threat Model is recorded as [ICAP Threat Model Cloud Deployment](https://glasswall.atlassian.net/browse/THREATMODL-3)
