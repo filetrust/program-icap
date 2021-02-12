@@ -50,9 +50,9 @@ When updating the policy, the previous policy is not correctly writing to the po
 
 ***\*Reproduction steps:\****
 
-\1. Log into UI and navigate to policy page.
+1. Log into UI and navigate to policy page.
 
-\2. Update the current policy and publish.
+2. Update the current policy and publish.
 
 ***\*Expected Results:\****
 
@@ -78,11 +78,11 @@ When processing a file on the north Europe main endpoint, the set policy is not 
 
 ***\*Reproduction steps:\****
 
-\1. Log into UI and navigate to draft policy.
+1. Log into UI and navigate to draft policy.
 
-\2. Update draft policy to have all word flags set to disallow and publish policy.
+2. Update draft policy to have all word flags set to disallow and publish policy.
 
-\3. Process a word document through ICAP server.
+3. Process a word document through ICAP server.
 
 ***\*Expected Results:\****
 
@@ -142,10 +142,10 @@ When try to login using those details getting error:
 
 ![g9](C:\Users\lenovo\Desktop\g9.png)
 
-\- Checked logs of Identity management service - could not see traffic.
+- Checked logs of Identity management service - could not see traffic.
 
-\- Error in the page indicates that the server was trying to call localhost:80, which is not the correct path to the identity management service.
+- Error in the page indicates that the server was trying to call localhost:80, which is not the correct path to the identity management service.
 
-\- Checked config of management-ui - there was no URL set for identity management.
+- Checked config of management-ui - there was no URL set for identity management.
 
 Manage to login after seb deployed the update.
