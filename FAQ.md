@@ -10,9 +10,9 @@ Errors are also seen in the transaction query aggregator.
 
 ***\*Steps to reproduce:\****
 
-\1. Process file through icap server.
+1. Process file through icap server.
 
-\2. Navigate to UI and navigate to request history.
+2. Navigate to UI and navigate to request history.
 
 ***\*Expected Outcomes\****:
 
