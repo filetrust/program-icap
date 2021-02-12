@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-This page is created to provide answers for ***\*****Frequently Asked Questions*****\***.
+This page is created to provide answers for Frequently Asked Questions.
 
 ## 1) UI Transaction History: Transactions Not Being Displayed (201)
 
@@ -8,17 +8,17 @@ In <https://management-ui-neu-main.northeurope.cloudapp.azure.com/> transactions
 
 Errors are also seen in the transaction query aggregator.
 
-***\*Steps to reproduce:\****
+**Steps to reproduce:**
 
 1. Process file through icap server.
 
 2. Navigate to UI and navigate to request history.
 
-***\*Expected Outcomes\****:
+**Expected Outcomes:**
 
 The processed file is observed in the log.
 
-***\*Actual Outcomes\****:
+**Actual Outcomes:**
 
 No files are observed and there are errors observed in the transaction query aggregator pod.
 
@@ -48,17 +48,17 @@ The secret script for this cluster most likely needs updating.
 
 When updating the policy, the previous policy is not correctly writing to the policy history store.
 
-***\*Reproduction steps:\****
+**Reproduction steps:**
 
 1. Log into UI and navigate to policy page.
 
 2. Update the current policy and publish.
 
-***\*Expected Results:\****
+**Expected Results:**
 
 The policy is updated, and the previous policy is now observable in the policy history.
 
-***\*Actual Results:\****
+**Actual Results:**
 
 The policy is updated on screen, the previous policy cannot be seen in the policy history, and cannot be seen in file store. There is also a 401 being produced in the policy management API logs.
 
@@ -76,7 +76,7 @@ The secret script for this cluster most likely needs updating.
 
 When processing a file on the north Europe main endpoint, the set policy is not being applied correctly.
 
-***\*Reproduction steps:\****
+**Reproduction steps:**
 
 1. Log into UI and navigate to draft policy.
 
@@ -84,11 +84,11 @@ When processing a file on the north Europe main endpoint, the set policy is not 
 
 3. Process a word document through ICAP server.
 
-***\*Expected Results:\****
+**Expected Results:**
 
 The file is blocked and then referred to the NCFS policy.
 
-***\*Actual Results:\****
+**Actual Results:**
 
 The file gets sanitised according to default policy, returning 200 ok and a sanitised file.
 
